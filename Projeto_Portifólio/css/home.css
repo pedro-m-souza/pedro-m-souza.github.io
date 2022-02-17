@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    background: #23232f;
+    height: 9vh;
+    color: #f5c18c;
+    font-size: 1em;
+    border-radius: 1px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 1;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.logo {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #f5c18c;
+
+}
+
+main {
+    background: url("pedras.jpg") no-repeat center center;
+    background-size: cover;
+    height: 91vh;
+    overflow-y:scroll;
+}
+
+a {
+    color: #f5c18c;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    color:#f5c18c;
+}
+
+.nav li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.drop {
+    display: none;
+}
+
+.drop-content {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+.perfil {
+    min-width: 15vw;
+    max-width: 70%;
+    width:auto;
+    height: auto;
+    border-radius: 50%;
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -1em;
+}
+
+.main-content {
+    margin-top: 18vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 4vw 10vh;
+    justify-content:center;
+    align-items: center;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-bottom: 20vh;
+    padding-top: 2em;
+    margin-left: 14vw;
+    margin-right: 11vw;
+    margin-bottom: 20vh;
+    background-color:rgba(41, 41, 54, 0.911);
+    font-family:serif;
+    color: #f1cba5;
+    letter-spacing: 0.1em;
+    word-spacing: 0.4em;
+    border-radius: 0.8em;
+}
+
+strong {
+    color: #e7b770;
+    text-decoration:underline;
+}
+
+h1, h2 {
+    color: rgb(219, 177, 113);
+}
+
+h3 {
+    color: #f0bd71;
+}
+
+.main-content p {
+    font-size: larger;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media (max-width: 55em){
+
+    body {
+        overflow: hidden;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family:Arial, Helvetica, sans-serif;
+        background: #23232f;
+        height: 10vh;
+        color: #C4AF9A;
+        border-radius: 1px;
+    }
+
+    main {
+        background: url("pedras.jpg") no-repeat center center;
+        background-size: cover;
+        height: 90vh;
+    }
+
+    a {
+        color: #f5c18c;
+    }
+
+    .logo {
+        font-size: 1.3em;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #f5c18c;
+    
+    }    
+
+    .drop {
+        display:flex;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .drop-button {
+        position:absolute;
+        top: 2vh;
+        width: 11.3vw;
+        height: 2.5em;
+        text-align-last:center;
+        background-image: linear-gradient(#23232f, #3e2b47);
+        position: fixed;
+        right: 5vw;
+        border-radius: 8px;
+        color: #eca359;
+    }
+
+    .drop-content {
+        display: flex;
+        visibility: hidden;
+        font-size: 0.8em;
+        position: absolute;
+        top: 6vh;
+        right:1vw;
+        width: 16vw;
+        height: 93.4vh;
+        background: #23232f;
+        filter: opacity(100%);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; 
+        overflow: hidden;
+        color: #C4AF9A;
+    }
+
+    .drop-button:focus + .drop-content {
+        visibility: visible;
+    }
+    
+    .drop-content:hover {
+        visibility: visible;
+    }
+
+    .nav li {
+        margin-left: 0;
+        opacity:0;
+    }
+
+    .main-content {
+        font-size: x-small;
+    }
+
+    .contato {
+        margin-top: 1em;
+    }
+
+    .contato li{
+        margin-left: 3em;
+    }
+
+    .perfil {
+        min-width: 15vw;
+    }
+
+}
