@@ -1,2 +1,2 @@
-# http://pedro-m-souza.github.io
+# http://pedrosouza.github.io
 My Portifolyo
