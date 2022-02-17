@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    height: 4rem;
+    background-color:rgb(44, 41, 41);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: azure;
+    padding-left: 6rem;
+}
+.nav {
+    padding-left: 45%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    align-items:flex-end;
+}
+.perfil{
+    position: relative;
+    left: 66%;
+    border-radius: 1rem;
+    border-top: 1rem;
+    border-color: aquamarine;
+    border-width: 1rem;
+}
