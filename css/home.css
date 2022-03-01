@@ -182,7 +182,7 @@ h3 {
     .drop-content {
         display: flex;
         visibility: hidden;
-        font-size: 0.8em;
+        font-size: 0.6em;
         position: absolute;
         top: 6vh;
         right:1vw;
